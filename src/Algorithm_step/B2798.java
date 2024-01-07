@@ -11,6 +11,7 @@ public class B2798 {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
 		StringTokenizer st = new StringTokenizer(bf.readLine());
+
 		int N = Integer.parseInt(st.nextToken());
 		int M = Integer.parseInt(st.nextToken());
 
@@ -25,10 +26,17 @@ public class B2798 {
 
 		int result = 0;
 
+		// 5 21
+		// 5 6 7 8 9
+		// 0 1 2 3 4
+
+		// 투포인터 알고리즘
+
 		for (int i = 0; i < N - 2; i++) {
 			int min = i + 1;
 			int max = N - 1;
 
+   			// 5 6 8
 			while (min < max) {
 				int sum = arr[i] + arr[min] + arr[max];
 
