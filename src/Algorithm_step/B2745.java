@@ -23,7 +23,7 @@ public class B2745 {
 		int tmp = 1; //0이 아닌 1인 이뉴는 0*36은 0이기 때문
 		int sum = 0; //진법 변환 후 합계
 
-		for(int i = N.length()-1 ; i >= 0; i--){ // 여기서, 맨오른쪽 부터 계산!
+		for(int i = N.length()-1 ; i >= 0; i--){ // 여기서, 맨오른쪽 부터 계산!e
 			char C = N.charAt(i);
 
 			if ('A' <= C && C<= 'Z') { //위 조건 만족하지 않을시 10이하 인 숫자임.
