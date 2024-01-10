@@ -1,4 +1,4 @@
-package Algorithm_Normal.Queue;
+package Algorithm_Normal.Decque;
 
 import java.io.BufferedReader;
 import java.io.IOException;
