@@ -10,8 +10,8 @@ public class B2609 {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(bf.readLine());
 
-		int A = Integer.parseInt(st.nextToken());
-		int B = Integer.parseInt(st.nextToken());
+		long A = Long.parseLong(st.nextToken());
+		long B = Long.parseLong(st.nextToken());
 
 		long gcd = 0; //최대공약수
 		long lcm = 0; //최소공배수
@@ -21,7 +21,6 @@ public class B2609 {
 
 		System.out.println(gcd);
 		System.out.println(lcm);
-
 	}
 
 	private static long getGCD(long a, long b) {
@@ -30,9 +29,6 @@ public class B2609 {
 			a=b; //6
 			b=divide; //
 		}
-		//24,18
-		//18,6
-		//6,0 -> 0이 므로 while문 종료
 		return a;
 	}
 }
