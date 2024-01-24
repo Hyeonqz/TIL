@@ -5,3 +5,8 @@
 3) RDBMS + ORM
 4) CS + 네트워크
 5) Springboot
+
+
+### Computer Science
+- 컴퓨터 구조(cs)
+- 운영체제(os)
