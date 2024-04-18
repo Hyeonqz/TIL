@@ -13,6 +13,7 @@ import maple.cube.random.user.domain.UserRepository;
 import maple.cube.random.user.application.dto.request.UserRequestDTO;
 
 @RequiredArgsConstructor
+@Transactional(readOnly = true)
 @Service
 public class UserService {
 	private final UserRepository userRepository;

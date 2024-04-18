@@ -7,12 +7,8 @@ import java.util.List;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -23,10 +19,12 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+import maple.cube.random.cube.domain.CashCube;
 import maple.cube.random.item.domain.Item;
 
 @Builder
-@Getter
+@Getter @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Table(name= "user")
@@ -39,8 +37,11 @@ public class User {
 
 	private String name;
 
-	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "user")
 	private List<Item> items = new ArrayList<>();
+
+	@OneToMany(mappedBy = "user")
+	private List<CashCube> cashCubes = new ArrayList<>();
 
 	@CreatedDate
 	private LocalDateTime createAt;
@@ -48,10 +49,7 @@ public class User {
 	@LastModifiedDate
 	private LocalDateTime updatedAt;
 
-	// 연관 관계 메소드
-	/*public void addItem(Item item) {
-		items.add(item);
-		item.setUser(this);
-	}*/
+
+
 
 }

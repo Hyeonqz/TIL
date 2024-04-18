@@ -1,12 +1,6 @@
-package maple.cube.random.item.domain;
-
-import java.time.LocalDateTime;
-
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.util.Lazy;
+package maple.cube.random.cube.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -25,36 +19,26 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import maple.cube.random.item.domain.enums.CubeRank;
-import maple.cube.random.item.domain.enums.EditionalRank;
 import maple.cube.random.user.domain.User;
 
 @Getter @Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Table(name="item")
+@Table(name="cubes")
 @Entity
-public class Item {
+public class CashCube {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="item_id")
+	@Column(name="cube_id")
 	private Long id;
 
-	private String name;
+	@Enumerated(value = EnumType.STRING)
+	private CubeType cubeType;
 
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="user_id")
 	@JsonIgnore
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name="user_id")
 	private User user;
-
-	@Enumerated(EnumType.STRING)
-	private CubeRank ordinaryRank;
-
-	@Enumerated(EnumType.STRING)
-	private EditionalRank editionalRank;
-
-	@CreatedDate
-	private LocalDateTime createAt;
 
 }
