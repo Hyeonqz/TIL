@@ -25,6 +25,7 @@
 ### ToyProject
 #### Random
 메이플 큐브 등급업 시스템 구현해보기
+<hr>
 
 ### Practice
 #### JWT Token 
