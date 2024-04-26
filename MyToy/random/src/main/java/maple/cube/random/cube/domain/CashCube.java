@@ -19,6 +19,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import maple.cube.random.common.BaseEntity;
 import maple.cube.random.user.domain.User;
 
 @Getter @Setter
@@ -27,11 +28,13 @@ import maple.cube.random.user.domain.User;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Table(name="cubes")
 @Entity
-public class CashCube {
+public class CashCube extends BaseEntity {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="cube_id")
 	private Long id;
+
+	private Long count;
 
 	@Enumerated(value = EnumType.STRING)
 	private CubeType cubeType;
@@ -40,5 +43,6 @@ public class CashCube {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="user_id")
 	private User user;
+
 
 }

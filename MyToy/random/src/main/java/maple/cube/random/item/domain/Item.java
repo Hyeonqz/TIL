@@ -25,6 +25,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import maple.cube.random.common.BaseEntity;
 import maple.cube.random.item.domain.enums.CubeRank;
 import maple.cube.random.item.domain.enums.EditionalRank;
 import maple.cube.random.user.domain.User;
@@ -35,7 +36,7 @@ import maple.cube.random.user.domain.User;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Table(name="item")
 @Entity
-public class Item {
+public class Item extends BaseEntity {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="item_id")
@@ -53,8 +54,5 @@ public class Item {
 
 	@Enumerated(EnumType.STRING)
 	private EditionalRank editionalRank;
-
-	@CreatedDate
-	private LocalDateTime createAt;
 
 }

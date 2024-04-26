@@ -20,19 +20,22 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import maple.cube.random.common.BaseEntity;
 import maple.cube.random.cube.domain.CashCube;
 import maple.cube.random.item.domain.Item;
 
 @Builder
-@Getter @Setter
+@Getter
+@Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-@Table(name= "user")
+@Table(name = "user")
 @Entity
-public class User {
+public class User extends BaseEntity {
 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="user_id")
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "user_id")
 	private Long id;
 
 	private String name;
@@ -42,14 +45,5 @@ public class User {
 
 	@OneToMany(mappedBy = "user")
 	private List<CashCube> cashCubes = new ArrayList<>();
-
-	@CreatedDate
-	private LocalDateTime createAt;
-
-	@LastModifiedDate
-	private LocalDateTime updatedAt;
-
-
-
 
 }
