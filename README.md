@@ -2,29 +2,30 @@
 <b>📌 그날 공부한 내용을 정리해서 Commit 하는 Repository</b>
 <br>
 
-## CS
+### CS
 #### 컴퓨터 구조(cs)
 #### 운영체제(os)
+<hr>
 
-<br>
-
-## Java
+### Java
 #### 문법
 #### 궁금했던 것들
+<hr>
 
-<br>
-
-## Architecture
-### DDD
+### Architecture
+#### DDD
 도메인 주도 개발 시작하기 - 최범균 저
 
-### TDD
+#### TDD
 테스트 주도 개발 시작하기 - 최범균 저
 
-### MSA
+#### MSA
+<hr>
 
-<br>
-
-## ToyProject
-### Random
+### ToyProject
+#### Random
 메이플 큐브 등급업 시스템 구현해보기
+<hr>
+
+### Practice
+#### JWT Token 
