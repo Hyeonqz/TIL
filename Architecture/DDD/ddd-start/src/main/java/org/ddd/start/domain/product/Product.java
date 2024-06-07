@@ -1,4 +1,4 @@
-package org.ddd.start.domain.order;
+package org.ddd.start.domain.product;
 
 import org.hibernate.annotations.Comment;
 

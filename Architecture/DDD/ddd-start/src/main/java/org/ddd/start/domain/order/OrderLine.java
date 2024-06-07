@@ -1,8 +1,8 @@
 package org.ddd.start.domain.order;
 
+import org.ddd.start.domain.product.Product;
 import org.hibernate.annotations.Comment;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
