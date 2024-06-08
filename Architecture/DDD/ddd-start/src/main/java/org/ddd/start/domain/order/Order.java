@@ -6,15 +6,43 @@ import java.util.Objects;
 
 import org.hibernate.annotations.Comment;
 
+import jakarta.persistence.Access;
+import jakarta.persistence.AccessType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embedded;
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-@Comment(value = "주문 테이블")
 @Getter
+@AllArgsConstructor @NoArgsConstructor
+@Access(AccessType.PROPERTY)
+@Comment(value = "주문 테이블")
+@Entity(name="purchase_order")
 public class Order {
+
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
 	private List<OrderLine> orderLines = new ArrayList<>();
 	private ShippingInfo shippingInfo;
+
+	@Column(name="state")
+	@Enumerated(EnumType.STRING)
 	private OrderState orderState;
+
 	private Money totalAmounts;
+
+	@Embedded
+	private Address address;
 
 	private String orderNumber; // Order 엔티티 식별자
 
