@@ -1,18 +1,21 @@
-# TIL
-<b>📌 그날 공부한 내용을 정리해서 Commit 하는 Repository</b>
+# TIL (Today I Learned)
+<b>📌 그날 공부한 내용을 내가 나중에 다시 볼수있게 정리해둔 Repository</b>
 <br>
 
-### CS
+## CS
 #### 컴퓨터 구조(cs)
 #### 운영체제(os)
-<hr>
 
-### Java
-#### 문법
-#### 궁금했던 것들
-<hr>
+<br>
 
-### Architecture
+## Java & OOP
+
+<br>
+
+## Database
+#### Hibernate
+
+## Architecture
 #### DDD
 도메인 주도 개발 시작하기 - 최범균 저
 
@@ -20,12 +23,15 @@
 테스트 주도 개발 시작하기 - 최범균 저
 
 #### MSA
-<hr>
 
-### ToyProject
-#### Random
-메이플 큐브 등급업 시스템 구현해보기
-<hr>
+<br>
 
-### Practice
+## Infra & Devops
+#### AWS
+
+#### NCP
+
+#### CI/CD
+
+## Practice
 #### JWT Token 
