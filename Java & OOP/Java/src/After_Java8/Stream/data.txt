@@ -1,0 +1,7 @@
+{pno:0,name:상품0,company네이버,price4264}
+{pno:1,name:상품1,company네이버,price5392}
+{pno:2,name:상품2,company네이버,price457}
+{pno:3,name:상품3,company네이버,price1040}
+{pno:4,name:상품4,company네이버,price1612}
+{pno:5,name:상품5,company네이버,price5163}
+
