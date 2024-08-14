@@ -1,0 +1,24 @@
+server:
+  port: 8100
+
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        c3p0:
+          max_size: 20
+          min_size: 5
+          timeout: 500
+          idle_test_period: 2000
+        dialect: MySQLDialect
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/jpastart?useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
