@@ -1,0 +1,17 @@
+# # docker pull mysql:latest
+
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "1234"  # 루트 사용자 비밀번호 설정
+      MYSQL_USER: "docker_user"  #새로운 사용자 이름 (선택 사항)
+      MYSQL_PASSWORD: "1234"  # 새로운 사용자 비밀번호 (선택 사항)
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data:/var/lib/mysql
+    restart: always

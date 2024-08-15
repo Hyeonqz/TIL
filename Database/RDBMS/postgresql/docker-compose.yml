@@ -1,0 +1,18 @@
+# 사전 작업
+# docker pull postgres:latest
+# docker images
+version: '3.8'
+
+services:
+  postgres:
+      image: postgres:latest
+      container_name: postgresql
+      environment:
+        POSTGRES_USER: "root"
+        POSTGRES_PASSWORD: "1234"
+        TZ: "Asia/Seoul"
+      ports:
+        - "5432:5432"
+      volumes:
+        - ./data:/var/lib/postgresql/data
+      restart: always  # 컨테이너가 비정상 종료될 때 자동으로 재시작하도록 설정
