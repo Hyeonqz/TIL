@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Database/ORM/jpa-basic" />
+    <file type="web" url="file://$PROJECT_DIR$/Java &amp; OOP/StreamQuiz" />
+    <file type="web" url="file://$PROJECT_DIR$/Practice/JWT-Token/JWT" />
+    <file type="web" url="file://$PROJECT_DIR$/개발방법론/DDD/ddd-start" />
+    <file type="web" url="file://$PROJECT_DIR$/개발방법론/TDD/tdd-practice" />
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

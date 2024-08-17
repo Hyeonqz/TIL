@@ -24,7 +24,6 @@ dependencies {
     implementation group: 'org.hibernate.orm', name: 'hibernate-core', version: '6.6.0.Final'
     implementation group: 'org.hibernate', name: 'hibernate-c3p0', version: '6.6.0.Final', ext: 'pom'
 
-
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

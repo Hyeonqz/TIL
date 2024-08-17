@@ -64,3 +64,48 @@ private long timestamp = System.currentTimeMillis();
 
 엔티티 클래스가 Serializable 인터페이스를 구현해야 할 수도 있다. <br>
 Hibernate 가 캐시 구현 기술이 Serializable 인터페이스를 요구하는 경우 엔티티 클래스가 Serializable 인터페이스를 상속해야 한다 <br>
+
+## 식별자 생성 방식
+1) 애플리케이션 코드에서 직접 생성하는 방식
+2) JPA 가 생성하는 방식
+- 식별 컬럼 방식, 시퀀스 방식, 테이블 방식
+
+### 직접 할당 방식
+애플리케이션 코드에서 직접 생성하는 방식으로, 별도의 식별자 생성 규칙이 존재하는 경우에 적합하다 <br>
+```java
+@Id
+private String id;
+
+public 클래스이름(Long orderId) {
+	return this.id = orderId;
+}
+```
+
+위처럼 생성자 방식을 사용해서 객체가 생성될 때 직접 할당을 해준다 <br>
+
+### 식별 컬럼 방식
+보통 위 방식을 많이 사용한다 <br>
+```java
+@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+private Long id;
+```
+
+sql 에서 auto_increment 설정이랑 같다. 컬럼의 숫자가 자동으로 증가하게 한다 <br>
+위 어노테이션이 있는 객체를 persist() 를 통해 저장할 때, 자동 시점에 식별자를 생성하기 위해 insert 쿼리가 실행되고 <br>
+식별자 컬럼 값을 구하고 엔티티 객체에 반영한다 <br>
+
+### 시퀀스 사용 방식
+```java
+	@Id @SequenceGenerator(name="room_seq_gen", sequenceName = "room_seq", allocationSize = 1)
+    @GeneratedValue(generator="room_seq_gen")
+	private Long id;
+```
+
+위 같은 경우는 테이블 생성시 테이블 이름에 해당하는 next_val? 인가 시퀀스를 관리하는 전용 테이블이 또 생긴다 <br>
+
+### 테이블 사용 방식
+```java
+@Id @TableGenerator(name="id_gen")
+@GenertaedValue(generator="id_gen")
+private Long id;
+```
