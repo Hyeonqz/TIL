@@ -1,4 +1,4 @@
-package com.spring.jpabasic.service;
+package com.spring.jpabasic.controller;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,6 +9,7 @@ import java.util.Optional;
 import org.hibernate.DuplicateMappingException;
 
 import com.spring.jpabasic.entity.User;
+import com.spring.jpabasic.service.UserService;
 import com.spring.jpabasic.utils.EMFUtils;
 
 public class UserMain {
