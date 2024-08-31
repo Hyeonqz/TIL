@@ -37,4 +37,8 @@ public class EMFUtils {
 			em.close();
 		}
 	}
+
+	public void a () {
+		EntityManager em = emf.createEntityManager();
+	}
 }

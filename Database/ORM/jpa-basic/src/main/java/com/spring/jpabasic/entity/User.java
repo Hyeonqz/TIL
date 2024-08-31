@@ -5,6 +5,7 @@ import java.util.Date;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
@@ -14,6 +15,9 @@ import jakarta.persistence.TemporalType;
 public class User {
 	@Id
 	String email;
+
+	@OneToOne(mappedBy = "owner")
+	private MembershipCard membershipCard;
 
 	private String name;
 
