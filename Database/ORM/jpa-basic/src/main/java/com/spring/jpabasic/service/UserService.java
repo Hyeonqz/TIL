@@ -3,6 +3,7 @@ package com.spring.jpabasic.service;
 import java.util.DuplicateFormatFlagsException;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 import com.spring.jpabasic.entity.User;
 import com.spring.jpabasic.exception.UserNotFoundException;
@@ -12,6 +13,18 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 
 public class UserService {
+
+	public void test() {
+		EntityManager em = EMFUtils.currentEntityManager();
+		try {
+			em.getTransaction().begin();
+			User user = em.find(User.class, "email");
+			Set<String> keywords = user.getKeywords();
+			keywords.remove("서울");
+		} finally {
+			em.close();
+		}
+	}
 
 	public void join(User user) {
 		EntityManager em = EMFUtils.createEntityManager();
