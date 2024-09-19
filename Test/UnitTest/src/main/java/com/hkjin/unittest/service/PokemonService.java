@@ -1,19 +1,12 @@
 package com.hkjin.unittest.service;
 
-import org.springframework.stereotype.Service;
+import com.hkjin.unittest.dto.PokemonDto;
+import com.hkjin.unittest.dto.PokemonPageableResponse;
 
-import com.hkjin.unittest.repository.PokemonRepository;
-
-import lombok.RequiredArgsConstructor;
-
-@Service
-public class PokemonService {
-	private PokemonRepository pokemonRepository;
-
-	public PokemonService (PokemonRepository pokemonRepository) {
-		this.pokemonRepository = pokemonRepository;
-	}
-
-
-
+public interface PokemonService {
+	PokemonDto createPokemon (PokemonDto pokemonDto);
+	PokemonPageableResponse getAllPokemon (int pageNo, int pageSize);
+	PokemonDto getPokemonById(Long id);
+	PokemonDto updatePokemon(PokemonDto pokemonDto, Long id);
+	void deletePokemonId(Long id);
 }

@@ -30,4 +30,14 @@ public class Review {
 	@JoinColumn(name="pokemon_id")
 	private Pokemon pokemon;
 
+	public void associatedWithPokemon(Pokemon pokemon) {
+		this.pokemon = pokemon;
+	}
+
+	public void updateReview(String title, String content, Integer stars) {
+		this.title = title;
+		this.content = content;
+		this.stars = stars;
+	}
+
 }

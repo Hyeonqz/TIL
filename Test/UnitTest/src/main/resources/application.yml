@@ -14,9 +14,9 @@ spring:
           idle_test_period: 2000
 
   datasource:
-    url: jdbc:mysql://localhost:3306/pokemon?useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
+    url: jdbc:postgresql://localhost:5432/pokemon
+    driver-class-name: org.postgresql.Driver
+    username: postgres
     password: 1234
 
 

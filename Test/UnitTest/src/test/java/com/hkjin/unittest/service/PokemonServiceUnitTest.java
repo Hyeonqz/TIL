@@ -1,6 +1,9 @@
 package com.hkjin.unittest.service;
 
+import java.util.Optional;
+
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -63,5 +66,97 @@ public class PokemonServiceUnitTest {
 		// then
 		Assertions.assertThat(savedPokemon).isNotNull();
 	}
+
+	@Test
+	void PokemonService_GetPokemonById_ReturnsPokemonDTO () {
+		// given
+		Pokemon pokemon = Pokemon.builder()
+			.name("피카츄")
+			.type("전기")
+			.build();
+
+		PokemonDto pokemonDto = PokemonDto.builder()
+			.name("피카츄")
+			.type("전기")
+			.build();
+
+		// when
+		Mockito.when(pokemonRepository.findById(1L)).thenReturn(Optional.ofNullable(pokemon));
+		PokemonDto savedPokemonDto = pokemonService.getPokemonById(1L);
+
+		// then
+		Assertions.assertThat(savedPokemonDto).isNotNull();
+	}
+
+	@Test
+	void PokemonService_UpdatePokemon_ReturnsPokemonDTO() {
+	    // given
+		Pokemon pokemon = Pokemon.builder()
+			.name("피카츄")
+			.type("전기")
+			.build();
+
+		PokemonDto pokemonDto = PokemonDto.builder()
+			.name("피카츄")
+			.type("전기")
+			.build();
+
+	    // when
+		Mockito.when(pokemonRepository.findById(1L)).thenReturn(Optional.ofNullable(pokemon));
+		Mockito.when(pokemonRepository.save(Mockito.any(Pokemon.class))).thenReturn(pokemon);
+
+		PokemonDto savedPokemon = pokemonService.updatePokemon(pokemonDto, 1L);
+
+	    // then
+		Assertions.assertThat(savedPokemon).isNotNull();
+	}
+
+
+	@Test
+	void PokemonService_DeletePokemon_ReturnsPokemonDTO () {
+		// given
+		Pokemon pokemon = Pokemon.builder()
+			.name("피카츄")
+			.type("전기")
+			.build();
+
+		// when
+		Mockito.when(pokemonRepository.findById(1L)).thenReturn(Optional.ofNullable(pokemon));
+
+		// then
+		org.junit.jupiter.api.Assertions.assertAll( () -> pokemonService.deletePokemonId(1L));
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

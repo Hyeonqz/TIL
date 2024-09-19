@@ -15,7 +15,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -28,5 +27,12 @@ public class Pokemon {
 
 	@OneToMany(mappedBy = "pokemon", cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<Review> reviews = new ArrayList<>();
+
+	@Builder
+	public Pokemon (Long id, String name, String type) {
+		this.id = id;
+		this.name = name;
+		this.type = type;
+	}
 
 }
