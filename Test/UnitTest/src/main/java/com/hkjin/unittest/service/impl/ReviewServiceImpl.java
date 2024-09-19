@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Objects;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.hkjin.unittest.dto.ReviewDto;
 import com.hkjin.unittest.entity.Pokemon;
@@ -17,7 +18,8 @@ import com.hkjin.unittest.service.ReviewService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor(access = AccessLevel.PRIVATE)
+@RequiredArgsConstructor
+@Transactional(readOnly = true)
 @Service
 public class ReviewServiceImpl implements ReviewService {
 	private final ReviewRepository reviewRepository;

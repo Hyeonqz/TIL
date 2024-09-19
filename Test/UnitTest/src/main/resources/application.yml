@@ -12,9 +12,11 @@ spring:
           min_size: 5
           timeout: 500
           idle_test_period: 2000
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/pokemon
+    url: jdbc:postgresql://localhost:5432/postgres
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: 1234
@@ -22,5 +24,5 @@ spring:
 
 logging:
   level.org.hibernate:
-    SQL: info
+    SQL: debug
     orm.jdbc.bind: TRACE

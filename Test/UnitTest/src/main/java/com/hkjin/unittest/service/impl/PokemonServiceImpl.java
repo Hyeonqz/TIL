@@ -19,7 +19,7 @@ import com.hkjin.unittest.service.PokemonService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor(access = AccessLevel.PRIVATE)
+@RequiredArgsConstructor
 @Transactional(readOnly = true)
 @Service
 public class PokemonServiceImpl implements PokemonService {
