@@ -1,6 +1,7 @@
 package com.hkjin.unittest.entity;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
@@ -33,6 +34,10 @@ public class Pokemon {
 		this.id = id;
 		this.name = name;
 		this.type = type;
+	}
+
+	public void addReview(Review review) {
+		this.reviews = Collections.singletonList(review);
 	}
 
 }
