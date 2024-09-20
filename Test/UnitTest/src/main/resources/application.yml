@@ -1,4 +1,10 @@
+# DB Postgres 사용
+server:
+  port: 8081
 spring:
+  config:
+    activate:
+      on-profile: postgres
   jpa:
     show-sql: true
     generate-ddl: true
@@ -19,6 +25,41 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
     driver-class-name: org.postgresql.Driver
     username: postgres
+    password: 1234
+
+
+logging:
+  level.org.hibernate:
+    SQL: debug
+    orm.jdbc.bind: TRACE
+
+--- # MySQL 사용
+server:
+  port: 8082
+
+spring:
+  config:
+    activate:
+      on-profile: mysql
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        c3p0:
+          max_size: 20
+          min_size: 5
+          timeout: 500
+          idle_test_period: 2000
+    database: mysql
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/pokemon?useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
     password: 1234
 
 
