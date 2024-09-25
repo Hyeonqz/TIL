@@ -5,7 +5,7 @@
 <br>
 
 ## Java 
-- 
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/record%20%EB%A5%BC%20%EC%95%8C%EC%95%84%EB%B3%BC%EA%B9%8C%EB%82%98%3F.md">record</a>: record를 알아볼까나?
 
 <br>
 
@@ -15,7 +15,7 @@
 <br>
 
 ## 네트워크
-- <a href="https://github.com/Hyeonqz/Reading-Books/blob/main/IT%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%9E%85%EB%AC%B8/%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%84%9C.md">로드밸런싱 : 로드밸런서 개념 및 부하 분산 방법을 알아보자
+- <a href="https://github.com/Hyeonqz/Reading-Books/blob/main/IT%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%9E%85%EB%AC%B8/%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%84%9C.md">로드밸런싱</a>: 로드밸런서 개념 및 부하 분산 방법을 알아보자
 
 <br>
 
@@ -35,7 +35,7 @@
 <br>
 
 ## Test
-- <a href="https://github.com/Hyeonqz/TIL/tree/master/Test/UnitTest">UnitTest</a> : SpringBoot 에서 단위 테스트 기초 이해하기 
+- <a href="https://github.com/Hyeonqz/TIL/tree/master/Test/UnitTest">UnitTest</a>: SpringBoot 에서 단위 테스트 기초 이해하기 
 - 
 
 <br>
