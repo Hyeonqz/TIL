@@ -6,6 +6,7 @@
 
 ## Java 
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/record%20%EB%A5%BC%20%EC%95%8C%EC%95%84%EB%B3%BC%EA%B9%8C%EB%82%98%3F.md">record</a>: record를 알아볼까나?
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/enum%EC%9D%B4%EB%9E%80%3F.md">Enum</a>: Enum 간단 정리
 
 <br>
 
