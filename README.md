@@ -21,13 +21,14 @@
 <br>
 
 ## Database
-- 
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/RDBMS/mysql/ddl%2Cdml%2Cdcl%20%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC.md">DDL,DML,DCL 개념 잡기</a>
 
 <br>
 
 ## ORM
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/jpa-basic/docs/Part2/11%EC%9E%A5-%EC%98%81%EC%86%8D%EC%84%B1%EC%A0%84%EC%9D%B4.md">영속성전이</a>: Hibernate 영속성 전이에 대해 알아보자
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/jpa-basic/docs/Part3/N%2B1.md">N+1 관련</a>: N+1 문제 원인 및 해결방법 알아보기
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/docs/%EC%84%9C%EB%B2%84%20%EC%B4%88%EA%B8%B0%ED%99%94%EC%8B%9C%20JPA%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%9E%90%EB%8F%99%EC%9C%BC%EB%A1%9C%20%EB%84%A3%EA%B8%B0.md">서버 초기화시 데이터 자동 insert하기 설정(JPA)</a>
 <br>
 
 ## Cloud
