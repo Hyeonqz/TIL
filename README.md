@@ -40,6 +40,12 @@
 ## Web
 - <a href="https://github.com/Hyeonqz/TIL/tree/master/Practice/JWT-Token/JWT">JWT-Token</a>: JWT Token 예제 구현
 
+  ### Spring
+  - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/Spring/docs/%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EB%B6%84%EB%A6%AC%ED%95%98%EA%B8%B0.md">SpringBoot 에서 개발환경 분리하기 </a>
+  - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/Spring/docs/%40GetMapping%2C%20%40PostMapping%20%EC%9D%84%20%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90.md">@GetMapping, @PostMapping 알아보기 </a>
+
+<br>
+
 ## Next.js
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/NextJs/Next%20%EC%97%90%EC%84%9C%20API%20%ED%86%B5%EC%8B%A0%EC%9D%B4%20%EC%97%86%EC%9C%BC%EB%A9%B4%20'use%20client'%EC%99%80%20'use%20server'%EB%A5%BC%20%EC%84%A0%EC%96%B8%ED%95%A0%20%ED%95%84%EC%9A%94%EA%B0%80%20%EC%97%86%EB%82%98%3F.md">Next.js 에서 통신 방법에 대한 고민</a>
 
