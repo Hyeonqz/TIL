@@ -9,6 +9,7 @@
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/enum%EC%9D%B4%EB%9E%80%3F.md">Enum</a>: Enum 간단 정리
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/Null%20%EC%B2%98%EB%A6%AC%EB%A5%BC%20%EC%9E%98%ED%95%98%EC%9E%90.md">Null 처리를 잘하자</a>\
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/Switch%20%ED%91%9C%ED%98%84%EC%8B%9D%20after%20JDK14.md">JDK14 이후 Switch~case 변화 </a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/SpringBoot%20%EC%97%90%EC%84%9C%20JVM%20%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%EC%9D%84%20%ED%95%B4%EB%B3%B4%EC%9E%90.md">SpringBoot 에서 JVM 모니터링 해보기 </a>
 
 <br>
 
@@ -52,8 +53,4 @@
 
 <br>
 
-## Infra & Devops
-
-<br>
-
-## 개발방법론
+## Infra
