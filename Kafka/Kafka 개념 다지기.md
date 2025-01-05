@@ -114,43 +114,239 @@ producer.send(new ProducerRecord<>("topicName","value"));
 producer.close();
 ```
 
+- ProducerRecord 가 Kafka 브로커에게 전송할 메시지가 된다
+  - ProducerRecord 는 크게 2가지로 생성할 수 있다 -> topic,key,value &  key,value 방식이 있다.
+
+### 프로듀서 기본 흐름
+- 카프카 클러스터에 메세지(이벤트)를 보내는 곳이며 즉 메시지를 카프카에 넣는 역할 -> 메시지 발행
+  - 메시지를 저장할 때 어떤 '**토픽**'에 저장해줘 라고 요청을 하게 된다. 
+
+![img_4.png](img/img_4.png) <br>
+
+- send() 메소드를 이용하여 레코드를 전송하면 Serializer 를 이용하여 byte 배열로 변환
+- Partitioner 을 이용하여 '어느 토픽으르 파티션으로 보낼지 결정한다'
+- 변환된 메시지(byte 배열) 을 버퍼에 저장을 한다
+  - 배치로 묶어서 메시지를 저장한다.
+- Sender 가 배치를 가져와서 카프카 브로커로 전송한다.
+
+#### Sender(=카프카 브로커로 전송하는 역할) 의 기본 동작
+- 별도의 스레드로 동작한다.
+- 배치가 찼는지 여부에 상관없이 Sender 는 차례대로 브로커에 전송한다.
+- send() 를 통해 들어오는 메시지는 배치에 누적되어 전달된다.
+
+send() 부터 배치에 메시지를 채우는 스레드랑 Sender 스레드는 별도의 스레드로 동작한다 <br>
+
+#### 처리량 관련 주요 속성
+- batch size: 배치 크기 -> 배치가 다 차면 바로 전송
+  - 배치사이즈가 작으면 한번에 보낼 수 있는 메세지의 개수가 줄어든다.
+  - 즉 전송 횟수가 많아지기 때문에 처리량이 떨어지게 된다.
+- linger.ms: 전송 대기 시간(기본값 0)
+  - 대기 시간이 없으면 배치를 바로 전송
+  - 대시 시간을 주면 그 시간 만큼 기다렸다 배치를 전송
+
+전송 실패를 알 수 없음 <br>
+실패에 대한 별도 처리가 필요없는 메세지 전송에 사용한다 <br>
+
+#### 전송 결과 확인해야 하는 경우
+1) Future 사용
+```java
+Future<RecordMetadata> f = producer.send(new ProducerRecord<>("topic","value"));
+try {
+	RecordMetadata meta = f.get(); // get() 을 할 때 블로킹 처리가 된다.
+} catch(Excetpion e) {
+	
+}
+```
+
+- 배치 효과 떨어짐 -> 처리량 저하
+- 처리량이 낮아도 되는 경우에만 사용
 
 
+2) Callback 사용
+```java
+producer.send(new ProducerRecord<>("simple","value"),
+    new Callback() {
+	    @Override
+        public void onCompletion(RecordMetadata m, Exception e) {
+			
+        }
+    }
+)
+```
+
+- 처리량 저하 없음 -> 대용량에 유리함
+
+<br>
+
+#### 프로듀서 - 전송 보장과 ack
+![img_5.png](img/img_5.png)<br>
+- ack = 0 
+  - 서버 응답을 기다리지 않음
+  - 전송 보장도 zero
+- ack = 1
+  - 파티션의 리더에 저장되면 응답 받음
+  - 리더 장애시 메시지 유실 가능
+- ack = all (또는 -1)
+  - 모든 레플리카에 저장되면 응답 받음
+    - 브로커 설정에 따라 달라짐 (min.insync.replicas)
+  - 엄격하게 전송을 보장해야 하는 상황에서는 ack=all 로 지정해야 함.
+
+- min.insync.replicas(브로커 옵션)
+  - 프로듀서 ack 옵션이 all 일 때 저장에 성공했다고 응답할 수 있는 동기화된 레플리카 최소 개수
+
+<br>
+
+#### 에러 유형
+- 전송 과정에서 실패
+  - ex) 전송 타임 아웃(일시적인 네트워크 오류)
+  - 리더 다운에 의한 새 리더 선출 진행 중
+  - 브로커 설정 메시지 크기 한도 초과
+  - 직렬화 실패? 등등
+- 전송 전에 실패
+  - 직렬화 실패, 프로듀서 자체 요청 크기 제한 초과
+  - 프로듀서 버퍼가 차서 기다린 시간이 최대 대기 시간 초과
+
+<br>
+
+#### 실패 대응
+**1) 재 시도 -> 재시도 가능한 에러는 재시도 처리**
+   - 브로커 응답 타임 아웃, 일시적인 리더 없음 등 
+- 재시도 위치
+   - 프로듀서는 브로커 전송 과정에서 에러가 발생시 재시도가 가능한 에러일시 재전송 시도 한다.
+   - send() 메소드에서 익셉션 발생시 익셉션에 타입에 따라 send() 재호출
+   - 콜백 메소드에서 익셉션 받으면 타입에 따라 send() 재호출
+- 아주 특별한 이유가 없다면 무한 재시도를 하지말자.
+  - 재시도를 한다는 것은 다음 메시지를 밀린다는 의미이므로, 재시도를 일정 시간 및 횟수로 제한을 하자.
 
 
+**2) 기록**
+- 추후 처리를 위해 기록
+  - 별도 파일 및 DB 에 실패 메시지 기록
+- 기록 위치
+  - send() 메소드에서 익셉션 발생시
+  - send() 메소드에 전달한 콜백에서 익셉션 받는 경우
+  - send() 메소드가 리턴한 Future 의 get() 메소드에서 익셉션 발생시
+
+<br>
+
+#### 재시도와 메시지 중복 전송 가능성
+- 브로커 응답이 늦게와서 재시도할 경우 중복 발송 가능
+
+<br>
+
+#### 재시도와 순서
+- max.in.flight.requests.per.connection
+  - 블록킹 없이 한 커넥션에서 전송할 수 있는 최대 전송중인 요청 개수
+  - 이 값이 1보다 크면 재시도 시점에 따라 메시지 순서가 바뀔 수 있음
+    - 전송 순서가 중요하면 이 값을 1로 지정
 
 
+#### 정리
+- 처리량 관련
+  - batch.size
+  - linger.ms
+
+- 전송 신뢰성
+  - ack = all
+  - min.insync.replicas = 2
+  - replication factor = 3
+
+- 재시도 주의 사항
+  - 중복 전송
+  - 배치 순서 바뀜
+
+<br>
+
+### Kafka - Consumer
+- 토픽 파티션에서 레코드 조회
+```java
+// config
+Properties prop = new Properties();
+prop.put("boostrap.servers","localhost:9092");
+prop.put("group.id","group1");
+prop.put("key.diserializer","***StringDeserializer");
+prop.put("value.deserizalizer","***StringDeserializer");
+
+// service
+KafakConsumer<String,String> consumer = new KafkaConsumer<String,String>(prop);
+consumer.subscribe(Collection.singletion("simple")) // 토픽 구독
+while(조건) {
+	ConsumerRecords<String,String> records = consumer.poll(Duration.ofMills(100));
+	for(ConsumerRecord<String,String> record : records ) {
+		log.info("Record : {} - topic {} - partition {} - offset {}", record.value(), record.topic(), record.partition(), record.offset());
+	}
+}
+consumer.close();
+```
+
+#### 토픽 파티션은 그룹 단위 할당
+![img_6.png](img/img_6.png)<br>
+- 컨슈머 그룹 단위로 파티션 할당
+  - 파티션 개수(브로커 개수) 보다 컨슈머 그룹이 많아지면 컨슈머는 놀게 된다.
+
+#### 커밋과 오프셋
+- 컨슈머 poll
+  - 이전 커밋된 offset 이 있으면 offset 이후로 레코드를 읽어 온다.
+
+#### 커밋된 오프셋이 없는 경우?
+- 처음 접근이거나 커밋한 오프셋이 없는 경우
+- auto.offset.reset 설정 사용
+  - earliest: 맨 처음 오프셋 사용
+  - latest: 가장 마지막 오프셋 사용 (기본 값)
+  - none : 컨슈머 그룹에 대한 이전 커밋이 없으면 익셉션 발생
+
+#### 컨슈머 설정
+- 조회에 영향을 주는 주요 설정 3개
+- fetch.min.bytes: 조회시 브로커가 전송할 최소 데이터 크기
+  - 기본값: 1
+  - 이 값이 크면 대기 시간은 늘지만 처리량이 증가 -> 가용성이 좋다. 
+- fetch.max.wait.ms: 데이터가 최소 크기가 될 때까지 기다릴 시간
+  - 기본값: 500
+  - 브로커가 리턴할 때까지 대기하는 시간으로 poll() 메소드의 대기 시간과 다름
+- max.partition.fetch.bytes: 파티션 당 서버가 리턴할 수 있는 최대 크기
+  - 기본값: 1MB
+
+#### 자동 커밋/수동 커밋
+- enable.auto.commit 설정
+  - true: 일정 주기로 컨슈머가 읽은 오프셋을 커밋(기본값)
+  - false: 수동으로 커밋 실행
+- auto.commit.interval.ms: 자동 커밋 주기
+  - 기본값 : 5000 (5초)
+- poll(), close() 메소드 호출시 자동 커밋 실행
+
+수동 커밋 -> 동기/비동키 커밋 사용 <br>
+
+#### 재처리와 순서
+- 컨슈머가 동일 메시지 조회 가능성
+  - 일시적 커밋 실패, 리밸런스 등에 의해 발생
+- 컨슈머는 멱등성을 고려해서 구현해야 함
+  - ex) 아래 메시지 재처리 할 경우
+    - 조회수 1증가 -> 좋아요 1증가 -> 조회수 1증가
+  - 단순 처리하면 조회수는 2가 아닌 4가 될 수 있음
+- 데이터 특성에 따라 타임스탬프, 일련 번호 등을 활용
+
+<br>
+
+#### 세션 타임아웃, 하트비트, 최대 poll 간격
+- 컨슈머는 하트비트를 전송해서 연결 유지
+  - 브로커는 일정 시간 컨슈머로부터 하트비트가 없으면 컨슈머를 그룹에서 빼고 리밸런스 진행
+  - 관련 설정
+    - session.timeout.ms: 세션 타임 아웃 시간
+    - heartbeat.interval.ms: 하트비트 전송 주기
+      - 세션 타임아웃의 1/3 이하 추천
+    - max.poll.interval.ms: poll() 메소드의 최대 호출 간격
+      - 이 시간이 지나도록 poll() 하지 않으면 컨슈머를 그룹에서 빼고 리밸런스 진행
+
+#### Consumer 종료 처리
+- 다른 쓰레드에서 wakeUp() 메소드 호출
+  - poll() 메소드가 WakeupException 발생 -> close 처리
+
+- KafkaConsumer 는 쓰레드에 안전하지 않음.
+  - 여러 쓰레드에서 동시에 사용(=호출) 하지 말 것
+    - wakeup() 메소드는 예외
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-비동기식 소켓 통신시 다중서버로 서비스되고있을때, 
-실제 POS 클라이언트와 커넥션이 맺어진 서버와, 
-결제 결과 수신 ILK -> 큐뱅으로 전달받는 서버가 다를때 POS Endpoint와 connection된 서버를 찾기 위해서 카프카를 통해서 "ILK에서 응답왔다!"는 메세지를 서버 전체에 던지는것이고, 
-모든 서버는 카프카가 발송하는 메세지를 수신 대기하고있는 상태로, 
-이때 메세지를 수신한 서버들이 자기와 결제를 시도한 POS 클라이언트가 연결되어있는지를 체크하고 연결되어있는 서버는 POS에 응답을 내려주고 끝, 
-나머지 서버는 나랑 연결된것이 없으니 메세지를 무시한다. 
-예외적으로 모든 서버가 연결된 POS클라이언트를 확인하지 못하면 에러로 처리한다.
+#### 용어 정리
+topic : 각종 메시지를 담는 곳 -> queue 라고 생각 <br>
+producer : topic 에 메시지를 넣는다 <br>
+consumer : topic 에서 메시지를 읽어온다. <br>
