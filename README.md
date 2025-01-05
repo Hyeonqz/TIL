@@ -7,7 +7,7 @@
 ## Java 
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/record%20%EB%A5%BC%20%EC%95%8C%EC%95%84%EB%B3%BC%EA%B9%8C%EB%82%98%3F.md">record</a>: record를 알아볼까나?
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/enum%EC%9D%B4%EB%9E%80%3F.md">Enum</a>: Enum 간단 정리
-- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/Null%20%EC%B2%98%EB%A6%AC%EB%A5%BC%20%EC%9E%98%ED%95%98%EC%9E%90.md">Null 처리를 잘하자</a>\
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/Null%20%EC%B2%98%EB%A6%AC%EB%A5%BC%20%EC%9E%98%ED%95%98%EC%9E%90.md">Null 처리를 잘하자</a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/Switch%20%ED%91%9C%ED%98%84%EC%8B%9D%20after%20JDK14.md">JDK14 이후 Switch~case 변화 </a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/SpringBoot%20%EC%97%90%EC%84%9C%20JVM%20%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%EC%9D%84%20%ED%95%B4%EB%B3%B4%EC%9E%90.md">SpringBoot 에서 JVM 모니터링 해보기 </a>
 
@@ -46,10 +46,15 @@
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/Spring/docs/%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EB%B6%84%EB%A6%AC%ED%95%98%EA%B8%B0.md">SpringBoot 에서 개발환경 분리하기 </a>
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/Spring/docs/%40GetMapping%2C%20%40PostMapping%20%EC%9D%84%20%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90.md">@GetMapping, @PostMapping 알아보기 </a>
 
+  ### Next.js
+  - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/NextJs/Next%20%EC%97%90%EC%84%9C%20API%20%ED%86%B5%EC%8B%A0%EC%9D%B4%20%EC%97%86%EC%9C%BC%EB%A9%B4%20'use%20client'%EC%99%80%20'use%20server'%EB%A5%BC%20%EC%84%A0%EC%96%B8%ED%95%A0%20%ED%95%84%EC%9A%94%EA%B0%80%20%EC%97%86%EB%82%98%3F.md">Next.js 에서 통신 방법에 대한 고민</a>
+  - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/NextJs/Next.js%20%EC%9D%80%20%EC%99%9C%20%EB%91%90%EB%B2%88%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EB%90%98%EB%8A%94%EA%B1%B4%EA%B0%80.md">Next.js 는 왜 두번 렌더링 되는걸까..?</a>
+
+
 <br>
 
-## Next.js
-- <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/NextJs/Next%20%EC%97%90%EC%84%9C%20API%20%ED%86%B5%EC%8B%A0%EC%9D%B4%20%EC%97%86%EC%9C%BC%EB%A9%B4%20'use%20client'%EC%99%80%20'use%20server'%EB%A5%BC%20%EC%84%A0%EC%96%B8%ED%95%A0%20%ED%95%84%EC%9A%94%EA%B0%80%20%EC%97%86%EB%82%98%3F.md">Next.js 에서 통신 방법에 대한 고민</a>
+## Kafka
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Kafka/Kafka%20%EA%B0%9C%EB%85%90%20%EB%8B%A4%EC%A7%80%EA%B8%B0.md">Kafka 아는척하기</a>
 
 <br>
 
