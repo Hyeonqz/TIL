@@ -53,6 +53,11 @@
 
 <br>
 
+## 개발 방법론
+  ### 클린 아키텍쳐ㅇㅁㄴ
+  - <a href="https://github.com/Hyeonqz/TIL/blob/master/%EA%B0%9C%EB%B0%9C%EB%B0%A9%EB%B2%95%EB%A1%A0/DDD/%EB%A9%80%ED%8B%B0%EB%AA%A8%EB%93%88%EC%97%90%EC%84%9C%20DDD%20%26%20%ED%81%B4%EB%A6%B0%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90%20%EB%8F%84%EC%A0%84%EA%B8%B0.md">멀티 모듈에서 DDD 기반의 클린 아키텍쳐 적용해보기 1탄</a>
+
+
 ## Kafka
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Kafka/Kafka%20%EA%B0%9C%EB%85%90%20%EB%8B%A4%EC%A7%80%EA%B8%B0.md">Kafka 아는척하기</a>
 
