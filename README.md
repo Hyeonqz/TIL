@@ -10,6 +10,7 @@
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/Null%20%EC%B2%98%EB%A6%AC%EB%A5%BC%20%EC%9E%98%ED%95%98%EC%9E%90.md">Null 처리를 잘하자</a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/Switch%20%ED%91%9C%ED%98%84%EC%8B%9D%20after%20JDK14.md">JDK14 이후 Switch~case 변화 </a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/SpringBoot%20%EC%97%90%EC%84%9C%20JVM%20%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%EC%9D%84%20%ED%95%B4%EB%B3%B4%EC%9E%90.md">SpringBoot 에서 JVM 모니터링 해보기 </a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/%EC%A2%8B%EC%9D%80%20%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C.md">좋은 예외처리에 대한 고민 과정</a>
 
 <br>
 
@@ -32,6 +33,7 @@
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/jpa-basic/docs/Part2/11%EC%9E%A5-%EC%98%81%EC%86%8D%EC%84%B1%EC%A0%84%EC%9D%B4.md">영속성전이</a>: Hibernate 영속성 전이에 대해 알아보자
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/jpa-basic/docs/Part3/N%2B1.md">N+1 관련</a>: N+1 문제 원인 및 해결방법 알아보기
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/docs/%EC%84%9C%EB%B2%84%20%EC%B4%88%EA%B8%B0%ED%99%94%EC%8B%9C%20JPA%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%9E%90%EB%8F%99%EC%9C%BC%EB%A1%9C%20%EB%84%A3%EA%B8%B0.md">서버 초기화시 데이터 자동 insert하기 설정(JPA)</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/docs/JPA%20%EC%97%94%ED%8B%B0%ED%8B%B0%EC%99%80%20%EC%8B%A4%EC%A0%9C%20DB%20%EC%99%B8%EB%9E%98%ED%82%A4%20%EC%A0%84%EB%9E%B5%20%EA%B6%81%EA%B8%88%EC%A6%9D%20%ED%95%B4%EA%B2%B0.md">JPA FK 전략에 대한 궁금증</a>
 <br>
 
 ## Test
