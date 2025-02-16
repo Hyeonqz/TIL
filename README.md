@@ -32,8 +32,10 @@
 ## ORM
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/jpa-basic/docs/Part2/11%EC%9E%A5-%EC%98%81%EC%86%8D%EC%84%B1%EC%A0%84%EC%9D%B4.md">영속성전이</a>: Hibernate 영속성 전이에 대해 알아보자
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/jpa-basic/docs/Part3/N%2B1.md">N+1 관련</a>: N+1 문제 원인 및 해결방법 알아보기
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/docs/N%2B1%20%EB%AC%B8%EC%A0%9C%20%EB%A7%8C%EB%93%A4%EA%B3%A0%20%EC%A7%81%EC%A0%91%20%ED%95%B4%EA%B2%B0%ED%95%B4%EB%B3%B4%EA%B8%B0.md">N+1 문제를 직접 해결해보자 </a> 
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/docs/%EC%84%9C%EB%B2%84%20%EC%B4%88%EA%B8%B0%ED%99%94%EC%8B%9C%20JPA%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%9E%90%EB%8F%99%EC%9C%BC%EB%A1%9C%20%EB%84%A3%EA%B8%B0.md">서버 초기화시 데이터 자동 insert하기 설정(JPA)</a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/docs/JPA%20%EC%97%94%ED%8B%B0%ED%8B%B0%EC%99%80%20%EC%8B%A4%EC%A0%9C%20DB%20%EC%99%B8%EB%9E%98%ED%82%A4%20%EC%A0%84%EB%9E%B5%20%EA%B6%81%EA%B8%88%EC%A6%9D%20%ED%95%B4%EA%B2%B0.md">JPA FK 전략에 대한 궁금증</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/docs/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%9E%A0%EA%B8%88%20%EA%B8%B0%EB%B2%95%20%EA%B8%B0%EC%B4%88.md">JPA 트랜잭션 잠금기법 기초</a>
 <br>
 
 ## Test
@@ -67,3 +69,7 @@
 <br>
 
 ## Infra
+- <a></a>
+
+  ### Docker
+    - <a href="">Docker CLI 명령어 모음</a>
