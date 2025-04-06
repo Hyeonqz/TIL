@@ -12,15 +12,20 @@
 down 은 docker container 를 내림으로써 기존에 모든 정보를 삭제하기 때문에 유의해야 한다 <br>
 
 ✅ compose 실행 후 관리
-> docker compose start <br> 시작
-> docker compose stop <br> // 중지 
-> docker compose restart <br> // 재시작
+> docker compose start <br>
+> docker compose stop <br>  
+> docker compose restart <br> 
+> docker compose down <br> 
+> > docker compose down -v # 기존 데이터 삭제 후 컴포즈 삭제<br>
 
+✅ compose 실행 후 관리
+```shell
+docker logs kafka-1 # 컨테이너 로그 확인
+```
 
 #### 3. docker container 조회
 > docker compose ps <br>
 > docker ps -a <br>
-
 
 
 #### 4. docker 로그
@@ -37,6 +42,13 @@ down 은 docker container 를 내림으로써 기존에 모든 정보를 삭제�
 >  docker system prune -a
 
 사용중이지 않은 모든 docker image 및 container 를 한번에 삭제한다 <br>
+
+
+#### docker-redis
+```shell
+docker exec -it redis_container redis-cli # redis cli 접속
+FLUSHALL # redis 데이터 전체 삭제
+```
 
 
 

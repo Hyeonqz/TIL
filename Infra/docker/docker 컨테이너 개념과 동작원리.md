@@ -15,11 +15,11 @@ ex) 컨테이너, 서비스 매쉬, 마이크로서비스, 불변 인프라 가 
 - 견고한 자동화 기능을 함께 사용하면 엔지니어는 영향이 큰 변경을 최소한의 노력으로 자주,예측 가능하게 수행할 수 있다.
 
 시대적으로 변화되는 애플리케이션 개발환경과 인프라 구조
-![img.png](img.png)
+![img.png](../image/img.png) <br>
 생산성과 민첩성이 발전하였다.
 
 클라우느 네이티브 기술 피라미드
-![img_1.png](img_1.png)
+![img_1.png](../image/img_1.png) <br>
 
 #### 컨테이너 란?
 - 애플리케이션과 운영환경이 모두 들어있는 독립된 공간
@@ -30,9 +30,9 @@ ex) 컨테이너, 서비스 매쉬, 마이크로서비스, 불변 인프라 가 
   
 ### Docker container Workflow
 -> client-server architecture
-![img_3.png](img_3.png)
+![img_3.png](../image/img_3.png) <br>
 
-![img_4.png](img_4.png)
+![img_4.png](../image/img_4.png) <br>
 
 
 
