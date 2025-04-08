@@ -40,9 +40,11 @@
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/docs/static%20final%EB%A1%9C%20%EC%84%A0%EC%96%B8%EB%90%9C%20QMember%EC%99%80%20final%20JpaQueryFactory%EB%A5%BC%20%EC%82%AC%EC%9A%A9.md">QueryDSL Q 클래스 전역 변수로 사용해도 괜찮을까?</a>
 
   ### NoSQL
-  - <a href="#">Redis 분산락 도전기</a>
+  - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/NoSQL/Redis%20%EA%B8%B0%EC%B4%88.md">Redis 기초 알아보기</a>
+  - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/NoSQL/Redis%20%EC%A1%B0%ED%9A%8C%EB%9E%91%20MySQL%20%EC%A1%B0%ED%9A%8C%20%EC%8B%9C%EA%B0%84%20%EC%A7%81%EC%A0%91%20%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90.md">redis vs mysql 퍼포먼스 비교 실험</a>
 
 ## Test
+- <a href="#">Spring 환경에서 Test 종류를 알아보기</a>
 - <a href="https://github.com/Hyeonqz/TIL/tree/master/Test/UnitTest">UnitTest</a>: SpringBoot 에서 단위 테스트 기초 이해하기 
 
 <br>
@@ -55,6 +57,7 @@
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/Spring/docs/%40GetMapping%2C%20%40PostMapping%20%EC%9D%84%20%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90.md">@GetMapping, @PostMapping 알아보기 </a>
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/Spring/docs/custom%20%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98%EC%9D%84%20%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90.md">Spring 어노테이션 작동원리 및 직접 만들어보기</a>
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/Spring/docs/Spring%20Event%20%EA%B8%B0%EB%B0%98%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90%20%EC%97%90%20%EB%8C%80%ED%95%98%EC%97%AC%20%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90.md">Spring Event 적용</a>
+  - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/Spring/docs/Spring%20%EC%97%90%EC%84%9C%20Util%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0.md">Spring 에서 Util 클래스를 어떻게 관리할까?</a>
 
   ### Next.js
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/NextJs/Next%20%EC%97%90%EC%84%9C%20API%20%ED%86%B5%EC%8B%A0%EC%9D%B4%20%EC%97%86%EC%9C%BC%EB%A9%B4%20'use%20client'%EC%99%80%20'use%20server'%EB%A5%BC%20%EC%84%A0%EC%96%B8%ED%95%A0%20%ED%95%84%EC%9A%94%EA%B0%80%20%EC%97%86%EB%82%98%3F.md">Next.js 에서 통신 방법에 대한 고민</a>
