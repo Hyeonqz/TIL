@@ -33,7 +33,7 @@ Spring 프레임워크를 사용하면 대부분의 클래스들에 어노테이
 그리고 Java 는 어노테이션을 내가 만들어서 사용또한 가능하다 <br> 
 보통 코드의 가독성 높이거나, 명시적으로 무언갈 선언하기 위해서 Custom 하여 사용하고는 한다 <br>
 만드는 방법은 간단한다.<br>
-![annotation-1.png](../imgs/annotation-1.png) <br>
+![annotation-1.png](imgs/annotation-1.png) <br>
 
 클래스를 생성할 떄 Annotation 으로 생성하면 된다. <br>
 위 어노테이션을 생성하면 아래와 같이 interface 에 @ 가 붙은 것이 생성된다 <br>
@@ -262,7 +262,7 @@ public class SpringLabApplication {
 
 > 결과 
 
-![annotation-2.png](../imgs/annotation-2.png) <br>
+![annotation-2.png](imgs/annotation-2.png) <br>
 
 내가 만든 어노테이션이 실제로 Bean 으로 등록이 되는 것을 확인하였다 <br><br>
 

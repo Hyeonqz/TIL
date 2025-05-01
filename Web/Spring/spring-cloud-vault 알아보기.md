@@ -72,7 +72,7 @@ services:
 vault 는 기본적으로 8200 포트를 사용하며 로컬 기준 localhost:8200/(=127.0.0.1:8200/) 으로 접속할 수 있다 <br>
 
 위 url 로 접속을 하면 로그인 화면이 나온다. 로그인 pw 은 VAULT_DEV_ROOT_TOKEN_ID 에 Value 를 입력하면 로그인 할 수 있다 <br>
-![img_1.png](../imgs/img_1.png) <br>
+![img_1.png](imgs/img_1.png) <br>
 
 Vault는 클라이언트 요청을 승인하기 위해 인증 메커니즘이 필요하다. <br>
 Spring Cloud Vault는 Vault로 애플리케이션을 인증하기 위해 여러 인증 메커니즘을 지원한다. <br>
@@ -102,7 +102,7 @@ spring.cloud.vault:
 
 
 이제는 암호화가 필요한 정보를 관리하기 위해선 메뉴에서 '**Secrets Engine**' 에 들어가야 한다 <br>
-![img_3.png](../imgs/img_3.png) <br>
+![img_3.png](imgs/img_3.png) <br>
 
 3가지의 메뉴가 있다 <br>
 - Generic: 가장 기본적인 형태의 보안 정보를 제공하고 관리
@@ -113,10 +113,10 @@ spring.cloud.vault:
 
 ### Key 관리
 Secrets Engine -> Transit -> path(이름 지정) <br>
-![img_4.png](../imgs/img_4.png) <br>
+![img_4.png](imgs/img_4.png) <br>
 
 key를 관리할 transit 생성이 되었고, 이제 실제 key 암복호화 Key 를 생성해보자 <br>
-![img_5.png](../imgs/img_5.png) <br>
+![img_5.png](imgs/img_5.png) <br>
 
 이제 다시 kek transit 을 들어가면 방금 생성한 key 가 화면에 보일 것이다 <br>
 이제 key 를 누르고 
@@ -130,14 +130,14 @@ vault:v1:Ic3XCBw3w0BUO7yEajyfd4YbMGR9aneq7sNCJPxREneJH5aY9STLUx9tAADunrkDds4eW55
 
 ### 데이터 암복호화
 이번에는 Secrete Engine 에서 enable new engine 을 들어간 후 Generic 에서 KV 를 선택한다 <br>
-![img_6.png](../imgs/img_6.png) <br>
+![img_6.png](imgs/img_6.png) <br>
 별다른 옵션을 건드리지 않고 생성을 해준다 <br>
 
 그리고 Create Secret 을 하여 방금 복사한 vault:v1 으로 시작한 key 를 넣어준다.
-![img_7.png](../imgs/img_7.png) <br>
+![img_7.png](imgs/img_7.png) <br>
 
 방금 생성한 vault-dek overview 를 보면 아래와 같이 위 값을 호출할 수 있는 방식이 나와 있다 <br>
-![img_8.png](../imgs/img_8.png) <br>
+![img_8.png](imgs/img_8.png) <br>
 
 필자는 API Paths 를 SpringBoot 에서 호출하여 키 관리를 진행할 것이다 <br>
 
@@ -152,7 +152,7 @@ Vault 를 통한 key 관리 방법은 총 3가지가 있다
 
 ## Springboot 프로젝트 적용
 SpringBoot 를 기준으로 Vault 를 사용하는 흐름은 아래와 같다 <br>
-![img_2.png](../imgs/img_2.png) <br>
+![img_2.png](imgs/img_2.png) <br>
 
 실제로는 vault 를 kubernetes 에 올리고 관리를 하고 있지만, kubernetes 지식은 없어서 추후 좀더 알아보고 그림을 고쳐보려고 한다 <br>
 
