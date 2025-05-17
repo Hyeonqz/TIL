@@ -12,6 +12,7 @@
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/SpringBoot%20%EC%97%90%EC%84%9C%20JVM%20%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%EC%9D%84%20%ED%95%B4%EB%B3%B4%EC%9E%90.md">SpringBoot 에서 JVM 모니터링 해보기 </a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/%EC%A2%8B%EC%9D%80%20%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C.md">좋은 예외처리에 대한 고민 과정</a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/thread-safe%20%EC%9D%B4%EB%9E%80%3F.md">thread-safe 에 대한 궁금증 해결</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%20%EA%B8%B0%EB%B3%B8%3A%20throws%2C%20throw%2C%20Throwable%20%EC%A0%95%EB%A6%AC.md">예외처리에 대한 기본을 알아보자</a>
 
 <br>
 
@@ -38,6 +39,7 @@
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/docs/JPA%20%EC%97%94%ED%8B%B0%ED%8B%B0%EC%99%80%20%EC%8B%A4%EC%A0%9C%20DB%20%EC%99%B8%EB%9E%98%ED%82%A4%20%EC%A0%84%EB%9E%B5%20%EA%B6%81%EA%B8%88%EC%A6%9D%20%ED%95%B4%EA%B2%B0.md">JPA FK 전략에 대한 궁금증</a>
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/docs/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%9E%A0%EA%B8%88%20%EA%B8%B0%EB%B2%95%20%EA%B8%B0%EC%B4%88.md">JPA 트랜잭션 잠금기법 기초</a>
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/docs/static%20final%EB%A1%9C%20%EC%84%A0%EC%96%B8%EB%90%9C%20QMember%EC%99%80%20final%20JpaQueryFactory%EB%A5%BC%20%EC%82%AC%EC%9A%A9.md">QueryDSL Q 클래스 전역 변수로 사용해도 괜찮을까?</a>
+  - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/docs/Hiberante%20column%20%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C%20%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0.md">JPA/Hibernate 컬럼명, 테이블명 대문자로 만들기</a>
 
   ### NoSQL
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/NoSQL/Redis%20%EA%B8%B0%EC%B4%88.md">Redis 기초 알아보기</a>
