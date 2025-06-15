@@ -13,6 +13,7 @@
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/%EC%A2%8B%EC%9D%80%20%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C.md">좋은 예외처리에 대한 고민 과정</a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/thread-safe%20%EC%9D%B4%EB%9E%80%3F.md">thread-safe 에 대한 궁금증 해결</a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%20%EA%B8%B0%EB%B3%B8%3A%20throws%2C%20throw%2C%20Throwable%20%EC%A0%95%EB%A6%AC.md">예외처리에 대한 기본을 알아보자</a>
+- <a href="https://url.kr/9zx6kn">Java 다중 상속</a>
 
 <br>
 
