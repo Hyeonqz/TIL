@@ -164,6 +164,33 @@ public class PaymentService {
 }
 ```
 
+MDC는 SLF4J에서 제공하는 스레드 로컬 컨텍스트 저장소이다 <br>
+각 스레드마다 독립적인 키-값 맵을 유지하여, 로그 출력 시 컨텍스트 정보를 자동으로 포함시킬 수 있는 메커니즘이다 <br>
+
+springboot 에서는 보통 filter 에 MDCFilter 를 등록하여 사용하고는 한다 <br>
+```java
+@Component
+public class MDCFilter implements Filter {
+    
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, 
+                        FilterChain chain) throws IOException, ServletException {
+        
+        HttpServletRequest httpRequest = (HttpServletRequest) request;
+        
+        // 자동으로 공통 컨텍스트 설정
+        MDC.put("requestId", UUID.randomUUID().toString());
+        MDC.put("userAgent", httpRequest.getHeader("User-Agent"));
+        MDC.put("clientIp", getClientIp(httpRequest));
+        
+        try {
+            chain.doFilter(request, response);
+        } finally {
+            MDC.clear();
+        }
+    }
+}
+```
 <br>
 
 ## 3. 결론
