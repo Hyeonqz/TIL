@@ -14,6 +14,7 @@
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/thread-safe%20%EC%9D%B4%EB%9E%80%3F.md">thread-safe 에 대한 궁금증 해결</a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%20%EA%B8%B0%EB%B3%B8%3A%20throws%2C%20throw%2C%20Throwable%20%EC%A0%95%EB%A6%AC.md">예외처리에 대한 기본을 알아보자</a>
 - <a href="https://url.kr/9zx6kn">Java 다중 상속</a>
+- <a href="https://url.kr/5q5nxh">ThreadLocal 자료구조 알아보기</a> 
 
 <br>
 
@@ -64,6 +65,7 @@
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/Spring/docs/Spring%20%EC%97%90%EC%84%9C%20Util%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0.md">Spring 에서 Util 클래스를 어떻게 관리할까?</a>
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/Spring/Spring%20%EC%97%90%EC%84%9C%20%EC%84%A4%EC%A0%95%20%ED%8C%8C%EC%9D%BC%EC%9D%84%20%EC%9D%BD%EC%96%B4%EC%98%A4%EB%8A%94%20%EB%8B%A4%EC%96%91%ED%95%9C%20%EB%B0%A9%EB%B2%95.md">Spring 에서 Property 를 읽어오는 다양한 방법</a>
   - <a href="https://url.kr/pjchqb">Spring 에서 Redis, MySQL 연결 끊김 감지하기</a>
+  - <a href="https://url.kr/uxjor8">springboot Logging 알아보기</a>
 
   ### Next.js
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/NextJs/Next%20%EC%97%90%EC%84%9C%20API%20%ED%86%B5%EC%8B%A0%EC%9D%B4%20%EC%97%86%EC%9C%BC%EB%A9%B4%20'use%20client'%EC%99%80%20'use%20server'%EB%A5%BC%20%EC%84%A0%EC%96%B8%ED%95%A0%20%ED%95%84%EC%9A%94%EA%B0%80%20%EC%97%86%EB%82%98%3F.md">Next.js 에서 통신 방법에 대한 고민</a>
