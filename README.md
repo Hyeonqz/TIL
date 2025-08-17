@@ -67,6 +67,8 @@
   - <a href="https://url.kr/pjchqb">Spring 에서 Redis, MySQL 연결 끊김 감지하기</a>
   - <a href="https://url.kr/uxjor8">springboot Logging 알아보기</a>
   - <a href="https://url.kr/m26let">springboot 에서 HikariDataSource 모니터링 진행하기</a>
+  - <a href="https://url.kr/551jt8">springboot + Prometheus + Grafana Docker 기반 모니터링 체계 구축하기</a>
+  - <a href="https://url.kr/thw7nj">springboot lifeCycle 이벤트 알아보기</a>
 
   ### Next.js
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/NextJs/Next%20%EC%97%90%EC%84%9C%20API%20%ED%86%B5%EC%8B%A0%EC%9D%B4%20%EC%97%86%EC%9C%BC%EB%A9%B4%20'use%20client'%EC%99%80%20'use%20server'%EB%A5%BC%20%EC%84%A0%EC%96%B8%ED%95%A0%20%ED%95%84%EC%9A%94%EA%B0%80%20%EC%97%86%EB%82%98%3F.md">Next.js 에서 통신 방법에 대한 고민</a>
