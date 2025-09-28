@@ -69,6 +69,7 @@
   - <a href="https://url.kr/m26let">springboot 에서 HikariDataSource 모니터링 진행하기</a>
   - <a href="https://url.kr/551jt8">springboot + Prometheus + Grafana Docker 기반 모니터링 체계 구축하기</a>
   - <a href="https://url.kr/thw7nj">springboot lifeCycle 이벤트 알아보기</a>
+  - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/Spring/Spring%20Boot%20MultipartFile%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%EC%B2%98%EB%A6%AC%20%EC%8B%9C%20NoSuchFileException%20%ED%95%B4%EA%B2%B0%EA%B8%B0.md">Spring Boot MultipartFile 비동기 처리 시 NoSuchFileException 해결기</a>
 
   ### Next.js
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/NextJs/Next%20%EC%97%90%EC%84%9C%20API%20%ED%86%B5%EC%8B%A0%EC%9D%B4%20%EC%97%86%EC%9C%BC%EB%A9%B4%20'use%20client'%EC%99%80%20'use%20server'%EB%A5%BC%20%EC%84%A0%EC%96%B8%ED%95%A0%20%ED%95%84%EC%9A%94%EA%B0%80%20%EC%97%86%EB%82%98%3F.md">Next.js 에서 통신 방법에 대한 고민</a>
