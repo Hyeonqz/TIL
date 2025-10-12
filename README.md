@@ -89,6 +89,7 @@
 ## Kafka
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Kafka/Kafka%20%EA%B0%9C%EB%85%90%20%EB%8B%A4%EC%A7%80%EA%B8%B0.md">Kafka 아는척하기</a>
 - <a href="https://url.kr/ipb7i6">Spring Kafka 직렬화, 역직렬화 알아보기</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/Kafka/Kafka%20%ED%95%B5%EC%8B%AC%20%EC%9B%90%EB%A6%AC%20zero%20copy%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0.md">Kafka Zero Copy 알아보기</a>
 
 <br>
 
