@@ -58,6 +58,7 @@
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/TroubleShooting/%5BSpringBoot%5D%20MultipartFile%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%EC%B2%98%EB%A6%AC%20%EC%8B%9C%20NoSuchFileException%20%ED%95%B4%EA%B2%B0%EA%B8%B0.md">Spring Boot MultipartFile 비동기 처리 시 NoSuchFileException 해결기</a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/TroubleShooting/%5BSpringBoot%5D%20%40Transactional%20%EC%A0%84%ED%8C%8C%20%EB%B0%8F%201%EC%B0%A8%20%EC%BA%90%EC%89%AC%20%EA%B4%80%EB%A0%A8%20%ED%8A%B8%EB%9F%AC%EB%B8%94%20%EC%8A%88%ED%8C%85.md">@Transactional 전파와 JPA 1차 캐시로 인한 데이터 불일치 트러블슈팅</a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/TroubleShooting/%5BSpringBoot%5D%20Apparent%20connection%20leak%20detected%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0.md">Apparent connection leak detected 문제 해결하기</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/TroubleShooting/%5BKafka%5D%20Request-Reply%20%EB%B6%84%EC%82%B0%ED%99%98%EA%B2%BD%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%B2%98%EB%A6%AC%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0.md">Kafka Request-Reply 패턴의 분산환경 메시지 처리 문제 및 해결 방안 정리</a>
 
 <br>
 
