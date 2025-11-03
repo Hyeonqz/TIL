@@ -1,7 +1,5 @@
 # Kafka Request-Reply패턴: 분산환경에서의 응답 라우팅 이슈 해결.md
 
-https://claude.ai/chat/ef86e768-123a-434d-a349-ae54be8c9462
-
 ## 개요
 통합 결제 서비스를 설계하는 과정에서 Kafka 를 도입하였고,Kafka Request-Reply 분산 환경 메시지 처리 관련 이슈 해결 과정을 적어보려고 합니다. 
 
