@@ -60,6 +60,7 @@
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/TroubleShooting/%5BSpringBoot%5D%20Apparent%20connection%20leak%20detected%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0.md">Apparent connection leak detected 문제 해결하기</a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/TroubleShooting/%5BKafka%5D%20Request-Reply%20%EB%B6%84%EC%82%B0%ED%99%98%EA%B2%BD%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%B2%98%EB%A6%AC%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0.md">Kafka Request-Reply 패턴의 분산환경 메시지 처리 문제 및 해결 방안 정리</a>
 - <a href="https://github.com/Hyeonqz/TIL/blob/main/TroubleShooting/%5BSpringBoot%5D%20AOP%20%EA%B4%80%EB%A0%A8%20%ED%8A%B8%EB%9F%AC%EB%B8%94%20%EC%8A%88%ED%8C%85%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0.md">AOP: Proxy 관련 문제 해결하기</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/TroubleShooting/%5BSpringBoot%5D%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C%20%EC%8B%A4%ED%8C%A8%20%EC%8B%9C%20%ED%8C%8C%EC%9D%BC%20%EC%9C%A0%EC%8B%A4%20%EB%B0%A9%EC%A7%80%3A%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%94%EB%84%90%20%EC%95%84%EC%9B%83%EB%B0%95%EC%8A%A4%20%ED%8C%A8%ED%84%B4%20%EC%A0%81%EC%9A%A9%EA%B8%B0.md">파일 유실 해결을 위한 트랜잭셔널 아웃박스 패턴 적용기</a>
 
 <br>
 
