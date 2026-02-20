@@ -47,6 +47,7 @@
   ### NoSQL
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/NoSQL/Redis%20%EA%B8%B0%EC%B4%88.md">Redis 기초 알아보기</a>
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/NoSQL/Redis%20%EC%A1%B0%ED%9A%8C%EB%9E%91%20MySQL%20%EC%A1%B0%ED%9A%8C%20%EC%8B%9C%EA%B0%84%20%EC%A7%81%EC%A0%91%20%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90.md">redis vs mysql 퍼포먼스 비교 실험</a>
+  - <a href="https://github.com/Hyeonqz/TIL/blob/main/Database/NoSQL/SpringBoot%20%EB%8B%A4%EC%A4%91%20Redis%20%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0.md">SpringBoot 다중 Redis 설정 하기</a>
 
 ## Test
 - <a href="#">Spring 환경에서 Test 종류를 알아보기</a>
@@ -89,11 +90,14 @@
 <br>
 
 ## 개발 방법론
-  ### 이벤트 기반 아키텍쳐(EDA)
-  - <a href="https://github.com/Hyeonqz/TIL/blob/master/%EA%B0%9C%EB%B0%9C%EB%B0%A9%EB%B2%95%EB%A1%A0/EDA/event-driven-architecture%20%EB%9E%80%3F.md">이벤트 기반 아키텍처(EDA) 개념 및 구현 방법 정리</a>
-  ### 클린 아키텍쳐
-  - <a href="https://github.com/Hyeonqz/TIL/blob/master/%EA%B0%9C%EB%B0%9C%EB%B0%A9%EB%B2%95%EB%A1%A0/DDD/%EB%A9%80%ED%8B%B0%EB%AA%A8%EB%93%88%EC%97%90%EC%84%9C%20DDD%20%26%20%ED%81%B4%EB%A6%B0%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90%20%EB%8F%84%EC%A0%84%EA%B8%B0.md">멀티 모듈에서 DDD 기반의 클린 아키텍쳐 적용해보기 1탄</a>
+### 이벤트 기반 아키텍쳐(EDA)
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/%EA%B0%9C%EB%B0%9C%EB%B0%A9%EB%B2%95%EB%A1%A0/EDA/event-driven-architecture%20%EB%9E%80%3F.md">이벤트 기반 아키텍처(EDA) 개념 및 구현 방법 정리</a>
 
+### 클린 아키텍쳐
+- <a href="https://github.com/Hyeonqz/TIL/blob/master/%EA%B0%9C%EB%B0%9C%EB%B0%A9%EB%B2%95%EB%A1%A0/DDD/%EB%A9%80%ED%8B%B0%EB%AA%A8%EB%93%88%EC%97%90%EC%84%9C%20DDD%20%26%20%ED%81%B4%EB%A6%B0%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90%20%EB%8F%84%EC%A0%84%EA%B8%B0.md">멀티 모듈에서 DDD 기반의 클린 아키텍쳐 적용해보기 1탄</a>
+
+### 멀티 모듈 아키텍쳐
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/%EA%B0%9C%EB%B0%9C%EB%B0%A9%EB%B2%95%EB%A1%A0/%EB%A9%80%ED%8B%B0%EB%AA%A8%EB%93%88/%EC%A2%8B%EC%9D%80%20%EB%A9%80%ED%8B%B0%20%EB%AA%A8%EB%93%88%20%EC%84%A4%EA%B3%84%ED%95%98%EA%B8%B0%20%EA%B8%B0%EC%B4%881.md">좋은 멀티 모듈 설계하기 기초1</a>
 
 ## Kafka
 - <a href="https://github.com/Hyeonqz/TIL/blob/master/Kafka/Kafka%20%EA%B0%9C%EB%85%90%20%EB%8B%A4%EC%A7%80%EA%B8%B0.md">Kafka 아는척하기</a>
