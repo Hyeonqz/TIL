@@ -3,27 +3,26 @@
 #### 오타 및 틀린 잘못된 정보가 있다면 언제든 issue 남겨주세요.
 
 # Language
-<hr>
 
 ## Java 
-- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/record%20%EB%A5%BC%20%EC%95%8C%EC%95%84%EB%B3%BC%EA%B9%8C%EB%82%98%3F.md">record</a>: record를 알아볼까나?
-- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/enum%EC%9D%B4%EB%9E%80%3F.md">Enum</a>: Enum 간단 정리
-- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/Null%20%EC%B2%98%EB%A6%AC%EB%A5%BC%20%EC%9E%98%ED%95%98%EC%9E%90.md">Null 처리를 잘하자</a>
-- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/Switch%20%ED%91%9C%ED%98%84%EC%8B%9D%20after%20JDK14.md">JDK14 이후 Switch~case 변화 </a>
-- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/SpringBoot%20%EC%97%90%EC%84%9C%20JVM%20%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%EC%9D%84%20%ED%95%B4%EB%B3%B4%EC%9E%90.md">SpringBoot 에서 JVM 모니터링 해보기 </a>
-- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/%EC%A2%8B%EC%9D%80%20%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C.md">좋은 예외처리에 대한 고민 과정</a>
-- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/thread-safe%20%EC%9D%B4%EB%9E%80%3F.md">thread-safe 에 대한 궁금증 해결</a>
-- <a href="https://github.com/Hyeonqz/TIL/blob/master/Java/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%20%EA%B8%B0%EB%B3%B8%3A%20throws%2C%20throw%2C%20Throwable%20%EC%A0%95%EB%A6%AC.md">예외처리에 대한 기본을 알아보자</a>
-- <a href="https://url.kr/9zx6kn">Java 다중 상속</a>
-- <a href="https://url.kr/5q5nxh">ThreadLocal 자료구조 알아보기</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/Language/Java/record%20%EB%A5%BC%20%EC%95%8C%EC%95%84%EB%B3%BC%EA%B9%8C%EB%82%98%3F.md">record를 알아볼까나?</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/Language/Java/enum%EC%9D%B4%EB%9E%80%3F.md">Enum 간단 정리</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/Language/Java/Null%20%EC%B2%98%EB%A6%AC%EB%A5%BC%20%EC%9E%98%ED%95%98%EC%9E%90.md">Null 처리를 잘하자</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/Language/Java/Switch%20%ED%91%9C%ED%98%84%EC%8B%9D%20after%20JDK14.md">JDK14 이후 Switch~case 변화 </a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/Language/Java/SpringBoot%20%EC%97%90%EC%84%9C%20JVM%20%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%EC%9D%84%20%ED%95%B4%EB%B3%B4%EC%9E%90.md">SpringBoot 에서 JVM 모니터링 해보기 </a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/Language/Java/%EC%A2%8B%EC%9D%80%20%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C.md">좋은 예외처리에 대한 고민 과정</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/Language/Java/thread-safe%20%EC%9D%B4%EB%9E%80%3F.md">thread-safe 에 대한 궁금증 해결</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/Language/Java/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%20%EA%B8%B0%EB%B3%B8%3A%20throws%2C%20throw%2C%20Throwable%20%EC%A0%95%EB%A6%AC.md">예외처리에 대한 기본을 알아보자</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/Language/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EB%8B%A4%EC%A4%91%EC%83%81%EC%86%8D%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0.md">Java 다중 상속</a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/Language/Java/ThreadLocal%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0.md">ThreadLocal 자료구조 알아보기</a>
 
 ## Kotlin
-- <a href=""></a>
+- <a href="https://github.com/Hyeonqz/TIL/blob/main/Language/Kotlin/Java%20Record%20Vs%20Kotlin%20Data%20Class%20%EC%B0%A8%EC%9D%B4.md">Java Record 와 Kotlin Data Class 비교</a>
 
 <br>
 
-# OS
-## CS
+# Computer Science
+## 운영체제
 - CPU 스케줄링: <a href="https://github.com/Hyeonqz/Reading-Books/blob/main/%ED%98%BC%EC%9E%90%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/os/CPU%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81.md">CPU 스케줄링 개념</a> + <a href="https://github.com/Hyeonqz/Reading-Books/blob/main/%ED%98%BC%EC%9E%90%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/os/CPU%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md">CPU 스케줄링 알고리즘 기법</a>
 
 ## 네트워크
