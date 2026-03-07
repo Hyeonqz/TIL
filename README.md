@@ -35,6 +35,7 @@
 
   ### RDBMS
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/RDBMS/mysql/ddl%2Cdml%2Cdcl%20%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC.md">DDL,DML,DCL 개념 잡기</a>
+  - <a href="https://github.com/Hyeonqz/TIL/blob/main/Database/RDBMS/MySQL%20%26%20HikariCP%20%EC%BB%A4%EB%84%A5%EC%85%98%20%EA%B4%80%EB%A0%A8.md">MySQL, HikariCP 커넥션 풀 관련 궁금증 해결</a>
 
   ### ORM
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/ORM/jpa-basic/docs/Part2/11%EC%9E%A5-%EC%98%81%EC%86%8D%EC%84%B1%EC%A0%84%EC%9D%B4.md">Hibernate 영속성 전이에 대해 알아보자</a>
@@ -50,6 +51,7 @@
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/NoSQL/Redis%20%EA%B8%B0%EC%B4%88.md">Redis 기초 알아보기</a>
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Database/NoSQL/Redis%20%EC%A1%B0%ED%9A%8C%EB%9E%91%20MySQL%20%EC%A1%B0%ED%9A%8C%20%EC%8B%9C%EA%B0%84%20%EC%A7%81%EC%A0%91%20%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90.md">redis vs mysql 퍼포먼스 비교 실험</a>
   - <a href="https://github.com/Hyeonqz/TIL/blob/main/Database/NoSQL/SpringBoot%20%EB%8B%A4%EC%A4%91%20Redis%20%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0.md">SpringBoot 다중 Redis 설정 하기</a>
+  - <a href="https://github.com/Hyeonqz/TIL/blob/main/Database/NoSQL/Redis%20Eviction.md">Redis Eviction 정책 및 실무 적용 사례 정리</a>
 
 ## Test
 - <a href="#">Spring 환경에서 Test 종류를 알아보기</a>
@@ -83,6 +85,7 @@
   - <a href="https://url.kr/551jt8">springboot + Prometheus + Grafana Docker 기반 모니터링 체계 구축하기</a>
   - <a href="https://url.kr/thw7nj">springboot lifeCycle 이벤트 알아보기</a>
   - <a href="https://github.com/Hyeonqz/TIL/blob/main/Web/Spring/springboot%20SLF4J%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0.md">springboot 실용적인 로그 레벨 제어 알아보기</a>
+  - <a href="https://github.com/Hyeonqz/TIL/blob/main/Web/Spring/Spring%20Open-in-view%20%EC%84%A4%EC%A0%95.md">Spring OSIV 설정 및 성능 개선 가이드</a>
 
   ### Next.js
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/NextJs/Next%20%EC%97%90%EC%84%9C%20API%20%ED%86%B5%EC%8B%A0%EC%9D%B4%20%EC%97%86%EC%9C%BC%EB%A9%B4%20'use%20client'%EC%99%80%20'use%20server'%EB%A5%BC%20%EC%84%A0%EC%96%B8%ED%95%A0%20%ED%95%84%EC%9A%94%EA%B0%80%20%EC%97%86%EB%82%98%3F.md">Next.js 에서 통신 방법에 대한 고민</a>
