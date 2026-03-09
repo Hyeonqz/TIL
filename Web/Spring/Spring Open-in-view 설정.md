@@ -519,6 +519,58 @@ OSIV = Open Session In View
 └─────────────────────────────────────────────────────┘
 ```
 
+---
+
+> **Q5) OSIV=true 설정 시 Service에 @Transactional이 없으면 OSIV가 의미 없는 것인가?**
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│  개념              제어 주체             생명주기             │
+├─────────────────────────────────────────────────────────────┤
+│  영속성 컨텍스트   OSIV (Interceptor)    HTTP 요청 전체       │
+│  트랜잭션          @Transactional        메서드 범위          │
+│  DB 커넥션         HikariCP              트랜잭션 범위        │
+└─────────────────────────────────────────────────────────────┘
+
+OSIV는 영속성 컨텍스트(EntityManager) 의 생명주기를 제어하는 것이고,
+@Transactional은 트랜잭션 의 생명주기를 제어하는 것이다.
+이 둘은 독립적으로 동작한다
+```
+
+### OSIV 의 역할
+```text
+@Transactional 없는 Service + OSIV=true 흐름
+
+HTTP 요청
+    │
+    ▼
+[OSIV] EntityManager Open ──────────────────────────────────┐
+    │                                                        │
+    ▼                                                        │
+Repository.findById()                                        │
+    └── @Transactional (Spring Data JPA 기본값)              │
+        ├── 커넥션 획득                                       │
+        ├── SELECT 쿼리                                       │
+        └── 커넥션 반납  ← 트랜잭션 종료                     │
+                                                             │
+    ▼                                                        │
+Controller에서 payment.getMerchant().getName() 호출          │
+    │                                                        │
+    └── 영속성 컨텍스트 살아있음 (OSIV 덕분)                  │
+        └── Hibernate: "Lazy 로딩 가능"                      │
+            ├── 새 커넥션 획득  ← ⚠ 여기가 문제             │
+            ├── SELECT merchant 쿼리                         │
+            └── 커넥션 반납                                  │
+                                                             │
+    ▼                                                        │
+[OSIV] EntityManager Close ─────────────────────────────────┘
+```
+
+OSIV는 @Transactional 유무와 관계없이 영속성 컨텍스트를 살려두기 때문에, <br>
+View/Controller 레이어에서 Lazy 로딩 시도 시 Hibernate가 스스로 새 커넥션을 획득해서 쿼리를 날린다.
+
+결론적으로는 위 동작 내부를 팀원들이 다 알수없으니 제일 간편한, 결국 OSIV=false + DTO 변환 패턴을 사용하자..!
+
 
 ## 참고
 
