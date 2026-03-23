@@ -87,6 +87,7 @@
   - <a href="https://url.kr/thw7nj">springboot lifeCycle 이벤트 알아보기</a>
   - <a href="https://github.com/Hyeonqz/TIL/blob/main/Web/Spring/springboot%20SLF4J%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0.md">springboot 실용적인 로그 레벨 제어 알아보기</a>
   - <a href="https://github.com/Hyeonqz/TIL/blob/main/Web/Spring/Spring%20Open-in-view%20%EC%84%A4%EC%A0%95.md">Spring OSIV 설정 및 성능 개선 가이드</a>
+  - <a href="https://github.com/Hyeonqz/TIL/blob/main/Web/Spring/SFTP%20%EC%84%B8%EC%85%98%20%ED%92%80%20%EC%82%AC%EC%9A%A9%20%EA%B0%80%EC%9D%B4%EB%93%9C.md">SFTP 세션 풀 관련 트러블 슈팅 및 모범사례 가이드</a>
 
   ### Next.js
   - <a href="https://github.com/Hyeonqz/TIL/blob/master/Web/NextJs/Next%20%EC%97%90%EC%84%9C%20API%20%ED%86%B5%EC%8B%A0%EC%9D%B4%20%EC%97%86%EC%9C%BC%EB%A9%B4%20'use%20client'%EC%99%80%20'use%20server'%EB%A5%BC%20%EC%84%A0%EC%96%B8%ED%95%A0%20%ED%95%84%EC%9A%94%EA%B0%80%20%EC%97%86%EB%82%98%3F.md">Next.js 에서 통신 방법에 대한 고민</a>
